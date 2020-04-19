@@ -4,13 +4,10 @@ from prompt_toolkit import prompt
 from prompt_toolkit.history import FileHistory
 from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
 
-start()
-
-
 parser = None
 def start():
     # showOptions()
-    parser = DateParser();
+    parser = DateParser()
     
     while 1:
         user_input = prompt('>',
@@ -27,3 +24,9 @@ def appendToFile(filename,string):
     pass
 
 def timeBetween(start,end):
+    pass
+
+
+
+
+start()
