@@ -4,29 +4,28 @@ from prompt_toolkit import prompt
 from prompt_toolkit.history import FileHistory
 from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
 
-parser = None
-def start():
-    # showOptions()
-    parser = DateParser()
+
+class myclasss():
     
-    while 1:
-        user_input = prompt('>',
-                            history=FileHistory('history.txt'),
-                            auto_suggest=AutoSuggestFromHistory(),
-                        )
-        print(user_input)
+    def getInput():
+        user_input = prompt('==>',history=FileHistory('history.txt'),auto_suggest=AutoSuggestFromHistory())
+        return user_input        
+
+
+    def start():
+        print("Hi welcome! how are you?")
+        # showOptions()
+        parser = DateParser()
+        
+
+    def appendToFile(filename,string):
+        #make a new file 
+        pass
+
+    def timeBetween(start,end):
+        pass
 
 
 
 
-def appendToFile(filename,string):
-    #make a new file 
-    pass
 
-def timeBetween(start,end):
-    pass
-
-
-
-
-start()
